@@ -3,6 +3,8 @@ import { Menu, X } from "lucide-react";
 import styles from "./LandingHeader.module.css";
 import { Button } from "./Button";
 
+import logo from "../assets/phones/a4bad2e4-da27-4951-8bbe-89b4d5ae882c.jpg";
+
 export const LandingHeader = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,7 +39,7 @@ export const LandingHeader = () => {
             <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""} ${isMobileMenuOpen ? styles.menuOpen : ""}`}>
                 <div className={styles.container}>
                     <div className={styles.logo}>
-                        <span className={styles.gradientText}>Socialadd</span>
+                        <img src={logo} alt="Lucohub" className={styles.logoImage} />
                     </div>
 
                     {/* Desktop Nav */}

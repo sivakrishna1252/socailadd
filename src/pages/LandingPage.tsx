@@ -21,18 +21,25 @@ import { useIntersectionObserver } from "../helpers/useIntersectionObserver";
 import styles from "./_index.module.css";
 
 // Import images
-import phoneHero1 from "../assets/phones/1w.png";
-import phoneHero2 from "../assets/phones/2w.png";
-import phoneUser1 from "../assets/phones/3w.png";
-import phoneUser2 from "../assets/phones/4w.png";
-import phoneVenue1 from "../assets/phones/5w.png";
-import phoneVenue2 from "../assets/phones/6w.png";
-import phoneOrg1 from "../assets/phones/7w.png";
-import phoneOrg2 from "../assets/phones/8w.png";
-import w1 from "../assets/phones/w1.png";
-import w2 from "../assets/phones/w2.png";
-import w4 from "../assets/phones/w4.png";
-import w6 from "../assets/phones/w6.png";
+// Hero Section: Signup, Profile (John Doe), Person Complete
+import hero1 from "../assets/phones/iPhone 13 & 14 - 7.jpg";
+import hero2 from "../assets/phones/iPhone 13 & 14 - 15.png"; // Profile/John Doe
+import hero3 from "../assets/phones/iPhone 13 & 14 - 9.jpg"; // Person (assuming 'complete')
+
+// Users Section: Explore Events
+import user1 from "../assets/phones/iPhone 13 & 14 - 11.jpg";
+import user2 from "../assets/phones/iPhone 13 & 14 - 14.png";
+import user3 from "../assets/phones/iPhone 13 & 14 - 13.png";
+
+// Property Owners: Property images
+import venue1 from "../assets/phones/iPhone 13 & 14 - 10.png";
+import venue2 from "../assets/phones/Creat Account.png";
+import venue3 from "../assets/phones/iPhone 13 & 14 - 6.jpg";
+
+// Organizers: Remaining
+import org1 from "../assets/phones/iPhone 13 & 14 - 15.png";
+import org2 from "../assets/phones/iPhone 13 & 14 - 16.png";
+import org3 from "../assets/phones/iPhone 13 & 14 - 11.jpg";
 
 // --- Subcomponents for Sections ---
 
@@ -144,13 +151,13 @@ export default function LandingPage() {
                         <div className={styles.heroVisual}>
                             <div className={styles.mockupPair}>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={phoneHero2} delay={600} className={styles.mockupLeft} />
+                                    <PhoneMockup image={hero2} delay={600} className={styles.mockupLeft} />
                                 </motion.div>
                                 <motion.div style={{ y: y2 }}>
-                                    <PhoneMockup image={phoneHero1} delay={800} className={styles.mockupCenter} />
+                                    <PhoneMockup image={hero1} delay={800} className={styles.mockupCenter} />
                                 </motion.div>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={w1} delay={1000} className={styles.mockupRight} />
+                                    <PhoneMockup image={hero3} delay={1000} className={styles.mockupRight} />
                                 </motion.div>
                             </div>
                         </div>
@@ -195,13 +202,13 @@ export default function LandingPage() {
                         <div className={styles.mockupSide}>
                             <div className={styles.mockupPair}>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={phoneUser1} delay={200} className={styles.mockupLeft} />
+                                    <PhoneMockup image={user1} delay={200} className={styles.mockupLeft} />
                                 </motion.div>
                                 <motion.div style={{ y: y2 }}>
-                                    <PhoneMockup image={phoneUser2} delay={400} className={styles.mockupRight} />
+                                    <PhoneMockup image={user2} delay={400} className={styles.mockupRight} />
                                 </motion.div>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={w2} delay={600} className={styles.mockupCenter} />
+                                    <PhoneMockup image={user3} delay={600} className={styles.mockupCenter} />
                                 </motion.div>
                             </div>
                         </div>
@@ -223,13 +230,13 @@ export default function LandingPage() {
                         <div className={styles.mockupSide}>
                             <div className={styles.mockupPair}>
                                 <motion.div style={{ y: y2 }}>
-                                    <PhoneMockup image={phoneVenue1} delay={200} className={styles.mockupLeft} />
+                                    <PhoneMockup image={venue1} delay={200} className={styles.mockupLeft} />
                                 </motion.div>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={phoneVenue2} delay={400} className={styles.mockupRight} />
+                                    <PhoneMockup image={venue2} delay={400} className={styles.mockupRight} />
                                 </motion.div>
                                 <motion.div style={{ y: y2 }}>
-                                    <PhoneMockup image={w4} delay={600} className={styles.mockupCenter} />
+                                    <PhoneMockup image={venue3} delay={600} className={styles.mockupCenter} />
                                 </motion.div>
                             </div>
                         </div>
@@ -297,13 +304,13 @@ export default function LandingPage() {
                         <div className={styles.mockupSide}>
                             <div className={styles.mockupPair}>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={phoneOrg1} delay={200} className={styles.mockupLeft} />
+                                    <PhoneMockup image={org1} delay={200} className={styles.mockupLeft} />
                                 </motion.div>
                                 <motion.div style={{ y: y2 }}>
-                                    <PhoneMockup image={phoneOrg2} delay={400} className={styles.mockupRight} />
+                                    <PhoneMockup image={org2} delay={400} className={styles.mockupRight} />
                                 </motion.div>
                                 <motion.div style={{ y: y1 }}>
-                                    <PhoneMockup image={w6} delay={600} className={styles.mockupCenter} />
+                                    <PhoneMockup image={org3} delay={600} className={styles.mockupCenter} />
                                 </motion.div>
                             </div>
                         </div>
